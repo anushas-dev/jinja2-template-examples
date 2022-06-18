@@ -26,5 +26,4 @@ data = {
 j2_template = Template(template)
 
 print(j2_template.render(data))
-# print(Template(order_info.txt).render(data))
 
