@@ -1,0 +1,10 @@
+Dear {{user}},
+It brings me great joy to share an amazing news with you,
+you have been shortlist for our {{program}}, and we would
+like you to follow a few instructions for us:
+1. You need to report at office on {{date}} at {{time}}
+2. Bring your personal laptop along
+3. Pre-Paperwork for onboarding formalities
+Many thanks,
+{{manager}}
+{{team}}
