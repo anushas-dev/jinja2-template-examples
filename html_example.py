@@ -1,3 +1,5 @@
+# Python
+"""This module demonstrates rendering a template with Jinja2 using sample data."""
 from jinja2 import Environment, FileSystemLoader
 
 environment = Environment(loader=FileSystemLoader("templates/"))
@@ -12,5 +14,5 @@ message = template.render(
 )
 
 # w+ is to create a file if not present
-with open("index.html",'w+') as f:
+with open("index.html",'w+', encoding="utf-8") as f:
     f.write(message)

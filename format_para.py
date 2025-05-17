@@ -1,8 +1,9 @@
+# Python
+"""This module demonstrates rendering a template with Jinja2 using sample data."""
 from jinja2 import Template
 
-
 numbers = [1,2,3,4,5,6,7,8]
-template = """Hello {{name | title}},
+TEMPLATE = """Hello {{name | title}},
 Hope you are doing well!
 Please confirm the following order:
 {{quantity | unique | max}} {{type | replace ("books","NOTEBOOKS") | lower}}, {% for key, value in collection.items() %} 
@@ -23,7 +24,6 @@ data = {
     "collection" : {"Pencils":"2","Pens":"3", "Stencils":"5", "Erasers":"5" }
 }
 
-j2_template = Template(template)
+j2_template = Template(TEMPLATE)
 
 print(j2_template.render(data))
-

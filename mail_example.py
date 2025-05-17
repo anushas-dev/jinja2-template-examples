@@ -1,3 +1,5 @@
+# Python
+"""This module demonstrates rendering a template with Jinja2 using sample data."""
 from jinja2 import Environment, FileSystemLoader
 
 environment = Environment(loader=FileSystemLoader("templates/"))

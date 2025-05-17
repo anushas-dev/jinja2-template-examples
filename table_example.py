@@ -1,3 +1,5 @@
+# Python
+"""This module demonstrates rendering a template with Jinja2 using sample data."""
 from jinja2 import Environment, FileSystemLoader
 
 environment = Environment(loader=FileSystemLoader("templates/"))
@@ -10,11 +12,10 @@ json_data = {
     {"Id": 4, "Number": 48, "Name": "Cream"},
     {"Id": 5, "Number": 49, "Name": "Curd"},
     {"Id": 6, "Number": 50, "Name": "Yogurt"}
-    
     ]
 }
 
 message = template.render(json_data)
 # w+ is to create a file if not present
-with open("index.html", "w+") as f:
-    f.write(message)
+with open("index.html", "w+", encoding="utf-8") as f:
+    f.write(message,)
