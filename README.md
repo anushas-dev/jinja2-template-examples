@@ -1,6 +1,6 @@
 # jinja2-template-examples
 
-The example coverer te following filters for the string manipulation for Jinja Templating:
+The example cover the following filters for the string manipulation for Jinja Templating:
 - Title
 - Upper
 - Lower
