@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load user data
-with open(os.path.join(BASE_DIR, "data.json"), "r", encoding="utf-8") as f:
+with open(os.path.join(BASE_DIR, "templates/data.json"), "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Jinja2 setup
