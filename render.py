@@ -1,3 +1,9 @@
+"""
+Template renderer for Jinja2 email templates.
+This script loads JSON data and renders it using a Jinja2 template,
+saving the output as an HTML file for preview.
+"""
+
 import json
 import os
 from jinja2 import Environment, FileSystemLoader
