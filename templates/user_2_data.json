@@ -1,0 +1,12 @@
+{
+  "name": "Sarah Johnson",
+  "email": "sarah.j@company.com",
+  "interests": [
+    "team management",
+    "scaling",
+    "performance"
+  ],
+  "plan": "enterprise",
+  "signup_date": "2023-11-20",
+  "last_activity": "2025-10-14"
+}
