@@ -1,0 +1,233 @@
+<!-- START EMAIL -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ newsletter.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; display: block; border: 0; outline: none; text-decoration: none; }
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+    /* RESPONSIVE */
+    @media screen and (max-width: 600px) {
+      .container { width: 100% !important; padding: 16px !important; }
+      .stack-column, .stack-column-center { display: block !important; width: 100% !important; max-width: 100% !important; }
+      .stack-column-center { text-align: center !important; }
+      .hero-image { height: auto !important; max-width: 100% !important; width: 100% !important; }
+      .two-col .column { display: block !important; width: 100% !important; max-width: 100% !important; }
+      .hide-mobile { display: none !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color:#111;">
+
+  <!-- Hidden Preheader Text -->
+  <div style="display:none; max-height:0px; overflow:hidden; font-size:1px; line-height:1px; color:#fff; opacity:0;">
+    {{ newsletter.preheader }}
+  </div>
+
+  <!-- Main wrapper/table -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" valign="top" style="padding:24px 16px;">
+        <!-- Container : max-width 600px -->
+        <table border="0" cellpadding="0" cellspacing="0" width="600" class="container" style="width:600px; max-width:600px; background-color:#ffffff; border-radius:8px; overflow:hidden;">
+          <!-- Header -->
+          <tr>
+            <td style="padding:20px; text-align:left; background: linear-gradient(90deg,#0ea5a4,#06b6d4); color:#fff;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="vertical-align:middle;">
+                    <!-- Logo -->
+                    <img src="{{ company.logo_url }}" alt="{{ company.name }} logo" width="140" style="display:block; border:0; height:auto;">
+                  </td>
+                  <td align="right" style="font-size:14px; color:#e6fffb; vertical-align:middle;">
+                    <strong>{{ newsletter.title }}</strong><br>
+                    <span style="opacity:0.9; font-size:12px;">{{ newsletter.date }}</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Hero -->
+          <tr>
+            <td style="padding:24px;">
+              <a href="{{ hero.link }}" target="_blank" style="display:block; text-decoration:none;">
+                <img src="{{ hero.image }}" alt="{{ hero.alt_text }}" width="100%" class="hero-image" style="border-radius:6px;">
+              </a>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:0 24px 18px 24px;">
+              <h1 style="margin:0 0 12px 0; font-size:22px; line-height:28px; font-weight:700;">Hello from {{ company.name }} — what's new this month</h1>
+              <p style="margin:0; font-size:15px; line-height:22px; color:#555;">
+                {{ newsletter.intro_text }}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Two-column highlight (feature + CTA) -->
+          <tr>
+            <td style="padding:18px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" class="two-col">
+                <tr>
+                  <td class="column" width="60%" valign="top" style="padding-right:12px;">
+                    <h2 style="margin:0 0 8px 0; font-size:18px;">{{ feature.title }}</h2>
+                    <p style="margin:0 0 12px 0; font-size:14px; color:#555;">{{ feature.description }}</p>
+                    <!-- Outlook-safe button -->
+                    <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ feature.cta_link }}" style="height:40px;v-text-anchor:middle;width:220px;" arcsize="8%" stroke="f" fillcolor="#0ea5a4">
+                        <w:anchorlock/>
+                        <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">{{ feature.cta_text }}</center>
+                      </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-- -->
+                      <a href="{{ feature.cta_link }}" target="_blank" style="display:inline-block; padding:12px 20px; background-color:#0ea5a4; color:#fff; text-decoration:none; border-radius:6px; font-weight:600; font-size:15px;">{{ feature.cta_text }}</a>
+                    <!--<![endif]-->
+                  </td>
+
+                  <td class="column" width="40%" valign="top" style="padding-left:12px; text-align:center;">
+                    <a href="{{ feature.cta_link }}" target="_blank">
+                      <img src="{{ feature.image }}" alt="{{ feature.image_alt }}" width="180" style="border-radius:6px;">
+                    </a>
+                    <p style="margin:10px 0 0 0; font-size:13px; color:#777;">{{ feature.note }}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Articles / Content previews -->
+          <tr>
+            <td style="padding:0 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding-top:12px; padding-bottom:6px;">
+                    <h3 style="margin:0; font-size:16px;">This month's top reads</h3>
+                  </td>
+                </tr>
+
+                {% for article in articles %}
+                <!-- Article {{ loop.index }} -->
+                <tr>
+                  <td style="padding:12px 0; border-top:1px solid #eee;{% if loop.last %} border-bottom:1px solid #eee;{% endif %}">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="80" valign="top" style="padding-right:12px;">
+                          <a href="{{ article.link }}">
+                            <img src="{{ article.image }}" alt="{{ article.image_alt }}" width="80" style="border-radius:6px;">
+                          </a>
+                        </td>
+                        <td valign="top">
+                          <a href="{{ article.link }}" style="text-decoration:none; color:#111; font-weight:600; font-size:15px;">{{ article.title }}</a>
+                          <p style="margin:6px 0 0 0; font-size:13px; color:#666;">{{ article.description }}</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                {% endfor %}
+
+                <!-- View more -->
+                <tr>
+                  <td style="padding:14px 0 22px 0; text-align:center;">
+                    <a href="{{ blog.main_url }}" target="_blank" style="display:inline-block; padding:10px 18px; background:#333; color:#fff; text-decoration:none; border-radius:6px; font-weight:600;">Read more articles</a>
+                    <span style="margin:0 8px; color:#ccc;">•</span>
+                    <a href="{{ blog.resources_url }}" target="_blank" style="color:#0ea5a4; text-decoration:none; font-weight:500;">Download whitepapers</a>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+
+          <!-- Events / CTA strip -->
+          <tr>
+            <td style="padding:16px 24px; background-color:#fbfdff;">
+              <h4 style="margin:0 0 8px 0; font-size:16px;">🎯 Upcoming events</h4>
+              <p style="margin:0 0 12px 0; font-size:14px; color:#555;">{{ event.description }}</p>
+              <div style="margin-bottom:8px;">
+                <a href="{{ event.register_url }}" target="_blank" style="display:inline-block; padding:10px 16px; background:#0ea5a4; color:#fff; text-decoration:none; border-radius:6px; font-weight:600; margin-right:8px;">{{ event.cta_text }}</a>
+                <a href="{{ event.all_events_url }}" target="_blank" style="color:#0ea5a4; text-decoration:none; font-weight:500;">View all events →</a>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Promo / Special offer -->
+          <tr>
+            <td style="padding:18px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="border-radius:8px; background:#f8fafc; padding:16px;">
+                <tr>
+                  <td style="font-size:14px; color:#333; padding-right:12px; vertical-align:middle;">
+                    <strong>🎉 {{ promo.title }}</strong> {{ promo.description }} — use code <code style="background:#fff;padding:2px 6px;border-radius:4px;border:1px solid #eee;font-weight:600;color:#0ea5a4;">{{ promo.code }}</code>. Valid until {{ promo.expiry }}.
+                  </td>
+                  <td style="text-align:right; vertical-align:middle; white-space:nowrap;">
+                    <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ promo.cta_link }}" style="height:40px;v-text-anchor:middle;width:120px;" arcsize="15%" stroke="f" fillcolor="#0ea5a4">
+                        <w:anchorlock/>
+                        <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:14px;font-weight:bold;">{{ promo.cta_text }}</center>
+                      </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-- -->
+                      <a href="{{ promo.cta_link }}" target="_blank" style="display:inline-block; padding:10px 16px; background:#0ea5a4; color:#fff; text-decoration:none; border-radius:6px; font-weight:600; font-size:14px; transition: background-color 0.3s ease;">{{ promo.cta_text }}</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:18px 24px; font-size:13px; color:#777; border-top:1px solid #eee;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td valign="top" style="padding-bottom:8px;">
+                    <strong>{{ company.name }}</strong><br>
+                    {{ company.address.street }}<br>
+                    {{ company.address.city }}, {{ company.address.state }} {{ company.address.zip }}, {{ company.address.country }}
+                  </td>
+                  <td valign="top" align="right" style="padding-bottom:8px;">
+                    <!-- Social media links -->
+                    {% for social in company.social_media %}
+                    <a href="{{ social.url }}" style="text-decoration:none; color:#0ea5a4; margin-left:8px;">{{ social.icon }} {{ social.name }}</a>
+                    {% if not loop.last %}<br>{% endif %}
+                    {% endfor %}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding-top:8px; color:#999;">
+                    You are receiving this email because you subscribed to updates from {{ company.name }}.<br>
+                    <a href="{{ footer.preferences_url }}" style="color:#0ea5a4; text-decoration:none;">Manage preferences</a> • 
+                    <a href="{{ footer.support_url }}" style="color:#0ea5a4; text-decoration:none;">Contact support</a> • 
+                    <a href="{{ footer.unsubscribe_url }}" style="color:#0ea5a4; text-decoration:none;">Unsubscribe</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="padding-top:10px; font-size:12px; color:#bbb;">
+                    © {{ current_year }} {{ company.name }}. All rights reserved. | 
+                    <a href="{{ footer.privacy_url }}" style="color:#bbb; text-decoration:none;">Privacy Policy</a> | 
+                    <a href="{{ footer.terms_url }}" style="color:#bbb; text-decoration:none;">Terms of Service</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End container -->
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+<!-- END EMAIL -->

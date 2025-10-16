@@ -1,0 +1,111 @@
+{
+  "current_year": 2025,
+  "newsletter": {
+    "title": "Monthly Newsletter",
+    "date": "October 2025",
+    "preheader": "Your monthly digest: Hacktoberfest updates, product features, and exclusive offers — read on!",
+    "intro_text": "Quick summary: Hacktoberfest 2025 participation, smart automation features, our top blog posts on productivity, upcoming webinars, and a special 20% discount for subscribers. Scroll down for details — and thanks for being with us on this journey."
+  },
+  "company": {
+    "name": "TechFlow Solutions",
+    "logo_url": "https://placehold.co/140x36/0ea5a4/ffffff?text=TechFlow&font=roboto",
+    "address": {
+      "street": "500 Innovation Drive, Suite 200",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94107",
+      "country": "USA"
+    },
+    "social_media": [
+      {
+        "name": "Twitter",
+        "icon": "𝕏",
+        "url": "https://twitter.com/techflowsol"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "💼",
+        "url": "https://linkedin.com/company/techflow-solutions"
+      },
+      {
+        "name": "GitHub",
+        "icon": "⚡",
+        "url": "https://github.com/techflow"
+      },
+      {
+        "name": "YouTube",
+        "icon": "📺",
+        "url": "https://youtube.com/@techflowsolutions"
+      }
+    ]
+  },
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=560&h=220&fit=crop&crop=center",
+    "alt_text": "Hacktoberfest 2025 - Join the Open Source Revolution",
+    "link": "https://techflow.example.com/hacktoberfest-2025"
+  },
+  "feature": {
+    "title": "New: Smart Task Automation",
+    "description": "Automatically prioritize tasks, schedule meetings, and send follow-ups with our new Smart Task Automation—save 3+ hours per day and never miss important deadlines.",
+    "cta_text": "Try Smart Automation",
+    "cta_link": "https://app.techflow.com/features/smart-automation",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=180&h=120&fit=crop&crop=center",
+    "image_alt": "Smart automation dashboard interface",
+    "note": "Available to all plans — <a href=\"https://app.techflow.com/account/settings\" style=\"color:#0ea5a4; text-decoration:none;\">enable in settings</a>."
+  },
+  "articles": [
+    {
+      "title": "How to scale your team without losing agility",
+      "description": "A practical guide to maintain velocity as your team grows — processes, roles and tooling recommendations from top engineering leaders.",
+      "link": "https://blog.techflow.com/scaling-teams-agility",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=80&h=80&fit=crop&crop=faces",
+      "image_alt": "Team collaboration meeting"
+    },
+    {
+      "title": "Designing for performance: tips from our frontend team",
+      "description": "Speed matters — practical techniques to reduce load times by 40% and improve user experience with modern optimization strategies.",
+      "link": "https://blog.techflow.com/frontend-performance-optimization",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=80&h=80&fit=crop&crop=center",
+      "image_alt": "Performance optimization dashboard"
+    },
+    {
+      "title": "Customer spotlight: How Acme Corp cut costs by 30%",
+      "description": "Real-world case study: automation strategies that delivered $2.4M in annual savings and improved team productivity by 150%.",
+      "link": "https://blog.techflow.com/case-study-acme-corp-automation",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=80&h=80&fit=crop&crop=center",
+      "image_alt": "Business analytics and cost savings charts"
+    },
+    {
+      "title": "Contributing to Open Source: Our Hacktoberfest Journey",
+      "description": "Join us as we share our experience contributing to open source projects during Hacktoberfest 2025 and how you can get started too.",
+      "link": "https://blog.techflow.com/hacktoberfest-2025-journey",
+      "image": "https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=80&h=80&fit=crop&crop=center",
+      "image_alt": "Open source code collaboration"
+    }
+  ],
+  "blog": {
+    "main_url": "https://blog.techflow.com",
+    "resources_url": "https://techflow.com/resources/whitepapers"
+  },
+  "event": {
+    "description": "Join our live webinar on <strong>November 15, 2025</strong> — \"Smart Productivity: From Chaos to Flow\" — featuring live demos, Q&A, and exclusive early access to new features. Plus, learn about our Hacktoberfest contributions!",
+    "cta_text": "Register for webinar",
+    "register_url": "https://events.techflow.com/webinar-smart-productivity",
+    "all_events_url": "https://events.techflow.com/all-events"
+  },
+  "promo": {
+    "title": "Subscriber-only offer:",
+    "description": "Get 20% off your next invoice",
+    "code": "HACKTOBER20",
+    "expiry": "November 30, 2025",
+    "cta_text": "Upgrade now",
+    "cta_link": "https://app.techflow.com/billing/upgrade"
+  },
+  "footer": {
+    "preferences_url": "https://app.techflow.com/account/email-preferences",
+    "support_url": "https://techflow.com/help/contact",
+    "unsubscribe_url": "https://app.techflow.com/unsubscribe",
+    "privacy_url": "https://techflow.com/privacy",
+    "terms_url": "https://techflow.com/terms"
+  }
+}
